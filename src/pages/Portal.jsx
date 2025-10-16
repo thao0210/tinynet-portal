@@ -5,7 +5,7 @@ const modules = [
   {
     name: "Cards",
     desc: "A curated collection of short creative clips hosted on TinyNet to create cards.",
-    url: "https://video.tinynet.net",
+    url: "https://cards.tinynet.net",
     active: true
   },
   {
