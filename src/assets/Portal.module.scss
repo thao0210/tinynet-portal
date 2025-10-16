@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+// Color palette
+$bg-dark: #0d0d0d; // nền chính
+$bg-center-glow: radial-gradient(circle at center, rgba(255,255,255,0.08) 0%, rgba(0,0,0,0.9) 70%);
+$card-bg: #1a1a1a;
+$card-hover: #222;
+$primary: #ffb347;
+$text-light: #eee;
+$text-muted: #aaa;
+$accent: #ffcc33;
+
+.portal {
+  min-height: 100vh;
+  width: 100vw;
+  background: $bg-dark;
+  background: $bg-center-glow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1.5rem;
+  color: $text-light;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  animation: fadeIn 1s ease-out;
+  box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  text-align: center;
+
+  .logo {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 0 1px rgba(255, 179, 71, 0.5));
+    transition: transform 0.6s ease, filter 0.6s ease;
+    &:hover {
+      transform: scale(1.08) rotate(2deg);
+      filter: drop-shadow(0 0 3px rgba(255, 179, 71, 0.3));
+    }
+  }
+
+  .titleGroup {
+    .title {
+      font-size: 2.3rem;
+      font-weight: 600;
+      background: linear-gradient(90deg, $primary, $accent);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 0.5px;
+    }
+    .slogan {
+      margin-top: 0.4rem;
+      font-size: 1.2rem;
+      color: $text-muted;
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 960px;
+}
+
+.card {
+  background: $card-bg;
+  border-radius: 1.2rem;
+  padding: 1.8rem 1.5rem;
+  text-decoration: none;
+  color: $text-light;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  transition: all 0.4s ease;
+  border: 1px solid rgba(255,255,255,0.05);
+  backdrop-filter: blur(8px);
+  position: relative;
+
+  &:hover {
+    background: $card-hover;
+    transform: translateY(-6px);
+    box-shadow: 0 0 35px rgba(255, 179, 71, 0.15);
+    border-color: rgba(255,179,71,0.2);
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: $primary;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: $text-muted;
+  }
+}
+
+.footer {
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  color: $text-muted;
+  letter-spacing: 0.3px;
+}
+
+.card.disabled {
+  pointer-events: none;
+  opacity: 0.9;
+  filter: grayscale(0.6);
+  position: relative;
+
+  .badge {
+    position: absolute;
+    top: 32px;
+    right: -42px; // nhô ra ngoài 1 chút
+    background: linear-gradient(135deg, #df6951, #df6951);
+    // background-color: #444;
+    color: #000;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 4px 18px; // kéo dài để dải cắt chéo
+    transform: rotate(45deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    pointer-events: none;
+    opacity:0.8;
+    clip-path: polygon(15% 0, 85% 0, 100% 100%, 0% 100%); // tạo cảm giác mảnh giấy hình thang đều
+  }
+}
