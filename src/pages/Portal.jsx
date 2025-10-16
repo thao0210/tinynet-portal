@@ -4,7 +4,7 @@ const modules = [
   
   {
     name: "Videos",
-    desc: "Free short videos collection.",
+    desc: "A curated collection of short creative clips hosted on TinyNet.",
     url: "https://video.tinynet.net",
     active: true
   },
@@ -28,7 +28,7 @@ const modules = [
   },
   {
     name: "Assistant",
-    desc: "A smart assistant powered by AI.",
+    desc: "Your intelligent AI companion for daily productivity.",
     url: "#",
     active: false
   },
