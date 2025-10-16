@@ -3,8 +3,8 @@ import styles from "../assets/Portal.module.scss";
 const modules = [
   
   {
-    name: "Videos",
-    desc: "A curated collection of short creative clips hosted on TinyNet.",
+    name: "Cards",
+    desc: "A curated collection of short creative clips hosted on TinyNet to create cards.",
     url: "https://video.tinynet.net",
     active: true
   },
