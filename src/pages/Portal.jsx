@@ -1,10 +1,9 @@
 import styles from "../assets/Portal.module.scss";
 
 const modules = [
-  
   {
     name: "Cards",
-    desc: "A curated collection of short creative clips hosted on TinyNet to create cards.",
+    desc: "Create and share personalized greeting or quote cards with images or short videos — all powered by TinyNet.",
     url: "https://cards.tinynet.net",
     active: true
   },
