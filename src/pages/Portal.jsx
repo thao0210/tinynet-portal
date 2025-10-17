@@ -2,9 +2,9 @@ import styles from "../assets/Portal.module.scss";
 
 const modules = [
   {
-    name: "Cards",
+    name: "Card",
     desc: "Create and share personalized greeting or quote cards with images or short videos — all powered by TinyNet.",
-    url: "https://cards.tinynet.net",
+    url: "https://card.tinynet.net",
     active: true
   },
   {
@@ -14,9 +14,27 @@ const modules = [
     active: true
   },
   {
-    name: "Garden",
-    desc: "The creative space for writing, drawing, and sharing ideas.",
-    url: "https://garden.tinynet.net",
+    name: "Story",
+    desc: "The creative space for writing, and sharing ideas.",
+    url: "https://story.tinynet.net",
+    active: false
+  },
+  {
+    name: "Profile",
+    desc: "Create and share your professional or personal profile, showcase skills, CV, and achievements.",
+    url: "https://profile.tinynet.net",
+    active: false
+  },
+  {
+    name: "Shop",
+    desc: "Build your mini online store, sell products easily, and receive payments via PayPal or direct transfer.",
+    url: "https://shop.tinynet.net",
+    active: false
+  },
+  {
+    name: "Challenge",
+    desc: "Set up challenges for yourself or others, track progress, compete, and share achievements with the community.",
+    url: "https://challenge.tinynet.net",
     active: false
   },
   {
@@ -28,15 +46,15 @@ const modules = [
   {
     name: "Assistant",
     desc: "Your intelligent AI companion for daily productivity.",
-    url: "#",
+    url: "https://assistant.tinynet.net",
     active: false
   },
-  {
-    name: "Voca Master",
-    desc: "A smart vocabulary trainer powered by AI.",
-    url: "#",
-    active: false
-  },
+//   {
+//     name: "Voca Master",
+//     desc: "A smart vocabulary trainer powered by AI.",
+//     url: "#",
+//     active: false
+//   },
 ];
 
 export default function Portal() {
@@ -45,7 +63,7 @@ export default function Portal() {
       <header className={styles.header}>
         <img src="/logo.svg" alt="TinyNet Logo" className={styles.logo} />
         <div className={styles.titleGroup}>
-          {/* <h1 className={styles.title}>TinyNet</h1> */}
+          <h1 className={styles.title}>TinyNet</h1>
           <p className={styles.slogan}>A small world of smart creations</p>
         </div>
       </header>

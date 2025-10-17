@@ -5,10 +5,10 @@ $bg-dark: #0d0d0d; // nền chính
 $bg-center-glow: radial-gradient(circle at center, rgba(255,255,255,0.08) 0%, rgba(0,0,0,0.9) 70%);
 $card-bg: #1a1a1a;
 $card-hover: #222;
-$primary: #ffb347;
+$primary: #f48b5b;
 $text-light: #eee;
 $text-muted: #aaa;
-$accent: #ffcc33;
+$accent: #fea85a;
 
 .portal {
   min-height: 100vh;
@@ -33,15 +33,15 @@ $accent: #ffcc33;
 
 .header {
   display: flex;
-  flex-direction: column;
+  width: 100%;
   align-items: center;
   margin-bottom: 3rem;
-  text-align: center;
 
   .logo {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     margin-bottom: 1rem;
+    margin-right: 15px;
     filter: drop-shadow(0 0 1px rgba(255, 179, 71, 0.5));
     transition: transform 0.6s ease, filter 0.6s ease;
     &:hover {
@@ -52,27 +52,28 @@ $accent: #ffcc33;
 
   .titleGroup {
     .title {
-      font-size: 2.3rem;
+      font-size: 1.5rem;
       font-weight: 600;
       background: linear-gradient(90deg, $primary, $accent);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       letter-spacing: 0.5px;
+      margin-bottom: 5px;
     }
     .slogan {
-      margin-top: 0.4rem;
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: $text-muted;
+      margin-top: 5px;
     }
   }
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   width: 100%;
-  max-width: 960px;
+//   max-width: 960px;
 }
 
 .card {
@@ -97,7 +98,7 @@ $accent: #ffcc33;
   h2 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    color: $primary;
+    color: $accent;
   }
 
   p {
