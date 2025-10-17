@@ -38,8 +38,8 @@ $accent: #fea85a;
   margin-bottom: 3rem;
 
   .logo {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin-bottom: 1rem;
     margin-right: 15px;
     filter: drop-shadow(0 0 1px rgba(255, 179, 71, 0.5));
@@ -52,16 +52,17 @@ $accent: #fea85a;
 
   .titleGroup {
     .title {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       font-weight: 600;
       background: linear-gradient(90deg, $primary, $accent);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       letter-spacing: 0.5px;
       margin-bottom: 5px;
+      margin-top: 0;
     }
     .slogan {
-      font-size: 1rem;
+      font-size: 0.8rem;
       color: $text-muted;
       margin-top: 5px;
     }
